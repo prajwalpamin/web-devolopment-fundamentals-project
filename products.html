@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet">
+<script src="./products.js"></script>
+</head>
+<body>
+    <div id="topbar">
+        <div>
+            <div id=logo-wrap>
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"/>
+                <p>Kafene</p>
+             </div>
+             <nav id="navbar">
+                 <a href="./home.html">Orders</a>
+                 <a href="./products.html">Products</a>
+                 <a href="./users.html">Users</a>
+             </nav>
+        </div>
+         
+        <a href="./index.html" id="logout">Logout</a>       
+    </div>
+    <main>
+        <div class="order-details">
+            <h1>Products</h1>
+            
+            <div class="order-wrap">
+               <div class="filter-sec">
+                   <h3>Filters</h3>
+                   <div class="checkboxes">
+                       <p>Count: <span id="count"> 100</span></p>
+
+                        <label class="checkbox-filters"><input id="expiryDate" type="checkbox" name="expiryDate" checked>Expired</label>
+                        <label class="checkbox-filters"><input id="stock" type="checkbox" name="stock" checked>Low Stock</label>
+                        
+                    
+                       <!-- <label class="checkbox-filters"><input type="checkbox" name="expiryDate" checked>Expired</label> -->
+                       <!-- <label class="checkbox-filters"><input type="checkbox" name="stock" checked>Low Stock</label> -->
+                   </div>
+               </div>
+               <div style="width:100%;">
+                    <table class="table-wrap">
+                        <tr>
+                            <th>ID</th>
+                            <th>Product Name</th>
+                            <th>Product Brand</th>
+                            <th>Expiry Date</th>
+                            <th>Unit Price</th>
+                            <th>Stock</th>
+                        </tr>
+                        <tbody id="products-wrap">
+                           
+                            
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
